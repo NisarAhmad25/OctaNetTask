@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TO DO List</h1>
+    </header>
+    <main>
+        <section class="todo-form">
+            <h2>Add a New Task</h2>
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Enter a new task" required>
+                <select id="categoryInput" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="date" id="dateInput" required>
+                <input type="time" id="timeInput" required>
+                <select id="priorityInput" required>
+                    <option value="" disabled selected>Select Priority</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="todo-list">
+            <h2>Tasks</h2>
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TO DO List. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
